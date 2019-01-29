@@ -6,3 +6,8 @@ a2enmod rewrite
 service apache2 restart
 a2enmod ssl
 service apache2 restart
+mysql_secure_installation
+wget https://github.com/PrestaShop/PrestaShop/releases/download/1.7.5.0/prestashop_1.7.5.0.zip
+rm /var/www/html/index.html
+rm /var/www/html/info.php
+unzip prestashop_1.7.5.0.zip -d /var/www/html/
